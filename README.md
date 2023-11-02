@@ -35,7 +35,7 @@ notepad $PROFILE
 Import-Module Terminal-Icons
 Set-PSReadLineOption -PredictionViewStyle ListView
 
-*Tema en json
+## Tema en json
 
 {
 	"name": "Snazzy",
