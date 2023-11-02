@@ -15,13 +15,13 @@ Get-PoshThemes
 
 notepad $PROFILE
 
- *Si no esta creado el archivo:
+ ## Si no esta creado el archivo:
  New-Item -Path $PROFILE -Type File -Force
 
- *Abrimos Archivo con:
+ ## Abrimos Archivo con:
  notepad $PROFILE
 
- *Instalamos Iconos
+ ## Instalamos Iconos
  Install-Module -Name Terminal-Icons -Repository PSGallery
 
  Import-Module Terminal-Icons
@@ -30,7 +30,7 @@ notepad $PROFILE
 
  Set-PSReadLineOption -PredictionViewStyle ListView
 
-*Dentro del modulo notepad quedara así:
+## Dentro del modulo notepad quedara así:
 (@(& 'C:/Users/Trabajo/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe' init pwsh --config='C:\Users\Trabajo\AppData\Local\Programs\oh-my-posh\themes\jandedobbeleer.omp.json' --print) -join "`n") | Invoke-Expression
 Import-Module Terminal-Icons
 Set-PSReadLineOption -PredictionViewStyle ListView
